@@ -1,0 +1,6 @@
+- Dùng HTML, CSS, JS
+- Không dùng thư viện (như bootstrap, jquery)
+- Đặt tên class theo BEM
+- Yêu cầu UI Desktop, Mobile trong thư mục design
+- Màu chữ, font chữ xem trong file style-guide.md
+- Responsive từ 320px đến 1440px
