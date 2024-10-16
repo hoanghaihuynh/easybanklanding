@@ -250,6 +250,62 @@ p {
     color: var(--neutral-grayish-blue);
 }
 
+
+
+/* Articles */
+.articles {
+    background-color: var(--neutral-very-light-gray);
+}
+.article__content {} 
+.article__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+}
+.article__grid a {
+    text-decoration: none;
+}
+.article__item {
+    border-radius: 0.5125rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+    background-color: white;
+    transition: all 0.15s ease-in-out;
+}
+.article__item:hover {
+    transform: scale(1.05);
+}
+.article__img {
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.article__text {
+    background-color: var(--neutral-white);
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+}
+.article__author {
+    font-size: 0.625rem;
+    color: var(--neutral-grayish-blue);
+    margin-bottom: 0.75rem;
+}
+.article__title {
+    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-dark-blue);
+    line-height: 1.2rem;
+    transition: color 0.75s;
+}
+.article__title:hover {
+    color: var(--primary-lime-green);
+}
+.article__description {
+    font-size: 0.8125rem;
+    color: var(--neutral-grayish-blue);
+
+}
+
 /* Desktop Responsive */
 @media screen and (min-width: 1113px) {
     .container--pall {
@@ -419,4 +475,35 @@ p {
         font-size: 0.875rem;
         line-height: 1.5;
     }
+
+    /* Articles */
+    .articles {}
+    .article__content {} 
+    .article__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .article__item {}
+    .article__img {}
+    .article__text {}
+    .article__author {}
+    .article__title {}
+    .article__description {}
+    
+
+}
+@media screen and (min-width:768px) and (max-width: 1113px){
+    /* Articles */
+    .articles {}
+    .article__content {} 
+    .article__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .article__item {}
+    .article__img {}
+    .article__text {
+        padding: 1.875rem 1.562rem;
+    }
+    .article__author {}
+    .article__title {}
+    .article__description {}
 }
